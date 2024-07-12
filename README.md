@@ -114,10 +114,30 @@
 </a>
 
 
-
 <h3 align="left">Tools and tests:</h3>
 <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="60" height="60"/> </a>  
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>
+<a href="https://www.cypress.io/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/cypress-io/cypress-io-icon.svg" alt="cypress" width="60" height="60"/>
+</a>
+<a href="https://junit.org/junit5/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/junit/junit-icon.svg" alt="junit" width="60" height="60"/>
+</a>
+<a href="https://jmeter.apache.org/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/apache_jmeter/apache_jmeter-icon.svg" alt="jmeter" width="60" height="60"/>
+</a>
+<a href="https://www.selenium.dev/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/seleniumhq/seleniumhq-icon.svg" alt="selenium" width="60" height="60"/>
+</a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="docker" width="60" height="60"/>
+</a>
+<a href="https://docs.pytest.org/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/pytest/pytest-icon.svg" alt="pytest" width="60" height="60"/>
+</a>
+<a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
+  <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/>
+</a>
 
  
 <h3 align="left">Other technologies:</h3>
