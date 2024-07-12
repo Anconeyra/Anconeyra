@@ -89,10 +89,9 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="nextjs" width="60" height="60"/></a>
 <a href="https://nuxtjs.org/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nuxtjs/nuxtjs-original.svg" alt="nuxtjs" width="60" height="60"/></a>
+<a href="https://svelte.dev/" target="_blank" rel="noreferrer">
+<img src="https://www.vectorlogo.zone/logos/sveltejs/sveltejs-icon.svg" alt="svelte" width="60" height="60"/></a>
 
-
-
-  
 <h3 align="left">Dising:</h3>
 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="60" height="60"/>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="60" height="60"/> </a> 
