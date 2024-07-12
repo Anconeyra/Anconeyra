@@ -105,8 +105,9 @@
 <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
 <img src="https://sass-lang.com/favicon.ico" alt="sass" width="60" height="60"/></a>
 <a href="https://mui.com/" target="_blank" rel="noreferrer">
-  <img src="https://mui.com/static/logo_raw.svg" alt="material-ui" width="60" height="60"/>
+  <img src="https://mui.com/static/logo.svg" alt="material-ui" width="60" height="60"/>
 </a>
+
 
 
 <h3 align="left">Operating System:</h3>
