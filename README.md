@@ -20,8 +20,9 @@
 
 - ⚡ Fun fact **Fun fact about my code: Don't touch me, otherwise you'll get too many errors...**<img src="https://media.giphy.com/media/m6OomwWCojfS8/giphy.gif" width="34">
 <h3 align="left">Database:</h3>
-src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img 
- 
+<a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+  </a> 
 
 
 <h3 align="left">Languages and Tools:</h3>
