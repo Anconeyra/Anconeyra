@@ -98,11 +98,10 @@
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwindcss" width="60" height="60"/></a>
 <a href="https://materializecss.com/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/materializecss/materializecss-icon.svg" alt="materializecss" width="60" height="60"/>
+<img src="https://materializecss.com/images/favicon/favicon-32x32.png" alt="materializecss" width="60" height="60"/>
 </a>
 <a href="https://bulma.io/" target="_blank" rel="noreferrer">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bulma/bulma-plain.svg" alt="bulma" width="60" height="60"/>
-</a>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bulma/bulma-plain.svg" alt="bulma" width="60" height="60"/></a>
 
   
 <h3 align="left">Operating System:</h3>
