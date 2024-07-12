@@ -124,17 +124,11 @@
 <a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
 <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/>
 </a>
-<a href="https://www.cypress.io/" target="_blank" rel="noreferrer">
-  <img src="/path/to/cypress.png" alt="cypress" width="60" height="60"/>
-</a>
-<h3 align="left">Tools and tests:</h3>
-<a href="https://junit.org/junit5/" target="_blank" rel="noreferrer">
-  <img src="/path/to/junit.png" alt="junit" width="60" height="60"/>
-</a>
-
-
  
 <h3 align="left">Other technologies:</h3>
 <p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="60" height="60"/> </a>
 <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="60" height="60"/> </a> 
-<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="60" height="60"/> </a>        </p>
+<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="60" height="60"/> </a> 
+ <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" width="60" height="60"/>
+  </a></p>
