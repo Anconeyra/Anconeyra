@@ -110,7 +110,7 @@
 <h3 align="left">Operating System:</h3>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
 <a href="https://www.microsoft.com/en-us/windows" target="_blank" rel="noreferrer">
-  <img src="https://logos-world.net/wp-content/uploads/2020/05/Windows-Logo.png" alt="windows" width="60" height="60"/>
+  <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F5f%2FWindows_logo_-_2012.svg%2F768px-Windows_logo_-_2012.svg.png&tbnid=FfkKRJYXsDI4mM&vet=12ahUKEwipg9KZwqCHAxUzR7gEHe8kA6EQMygEegQIARBx..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AWindows_logo_-_2012.svg&docid=zCKlu7j17zA_XM&w=768&h=768&q=Windows%20Logo&ved=2ahUKEwipg9KZwqCHAxUzR7gEHe8kA6EQMygEegQIARBx" alt="windows" width="60" height="60"/>
 </a>
 
 
