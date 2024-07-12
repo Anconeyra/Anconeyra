@@ -125,7 +125,7 @@
 <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/>
 </a>
 <a href="https://www.cypress.io/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/cypress-io/cypress-io-icon.svg" alt="cypress" width="60" height="60"/>
+  <img src="https://www.vectorlogo.zone/logos/cypressio/cypressio-icon.svg" alt="cypress" width="60" height="60"/>
 </a>
 <a href="https://junit.org/junit5/" target="_blank" rel="noreferrer">
   <img src="https://www.vectorlogo.zone/logos/junit/junit-icon.svg" alt="junit" width="60" height="60"/>
