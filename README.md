@@ -102,12 +102,11 @@
 </a>
 <a href="https://bulma.io/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bulma/bulma-plain.svg" alt="bulma" width="60" height="60"/></a>
-<a href="https://mui.com/" target="_blank" rel="noreferrer">
-  <img src="https://mui.com/static/logo_black.svg" alt="material-ui" width="60" height="60"/>
-</a>
 <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-  <img src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png" alt="sass" width="60" height="60"/>
+  <img src="https://sass-lang.com/favicon.ico" alt="sass" width="60" height="60"/>
 </a>
+
+
 
 
   
