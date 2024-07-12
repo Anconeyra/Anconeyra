@@ -29,10 +29,12 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg" alt="cassandra" width="60" height="60"/></a>
 <a href="https://mariadb.org/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg" alt="mariadb" width="60" height="60"/></a>
-<a href="https://www.phpmyadmin.net/" target="_blank" rel="noreferrer">
-<img src="https://www.phpmyadmin.net/themes/pmahomme/img/logo_right.png" alt="phpmyadmin" width="60" height="60"/></a>
 <a href="https://redis.io/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="redis" width="60" height="60"/></a>
+<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" width="60" height="60"/></a>
+<a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
+<img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="sql server" width="60" height="60"/></a>
 
   
 <h3 align="left">Languages:</h3>
