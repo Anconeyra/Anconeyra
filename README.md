@@ -3,25 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1, h3 {
-    color: white;
-  }
-  img {
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-</style>
+
+
 <title>Anconeyra Frank - Full Stack Developer</title>
 </head>
 <body>
