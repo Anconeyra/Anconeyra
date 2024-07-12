@@ -92,8 +92,8 @@
 <a href="https://svelte.dev/" target="_blank" rel="noreferrer">
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="60" height="60"/></a>
 <a href="https://deno.land/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/denoland/denoland-icon.svg" alt="deno" width="60" height="60"/>
-</a>
+<img src="https://deno.land/logo.svg" alt="deno" width="60" height="60"/></a>
+
 
 
 
