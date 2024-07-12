@@ -105,13 +105,12 @@
 <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
 <img src="https://sass-lang.com/favicon.ico" alt="sass" width="60" height="60"/></a>
 <a href="https://mui.com/" target="_blank" rel="noreferrer">
-  <img src="https://mui.com/static/logo.svg" alt="material-ui" width="60" height="60"/>
-</a>
-
-
+<img src="https://mui.com/static/logo.svg" alt="material-ui" width="60" height="60"/></a>
 
 <h3 align="left">Operating System:</h3>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
+<a href="https://www.microsoft.com/en-us/windows" target="_blank" rel="noreferrer">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_logo_-_2012.svg" alt="windows" width="60" height="60"/></a>
 
 <h3 align="left">Tools and tests:</h3>
 <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="60" height="60"/> </a>  
