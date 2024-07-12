@@ -69,7 +69,9 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="vuejs" width="60" height="60"/></a>
 
 <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="60" height="60"/></a>
+  <img src="https://www.djangoproject.com/s/img/logos/django-logo-negative.svg" alt="django" width="60" height="60"/>
+</a>
+
 
 <a href="https://rubyonrails.org/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="60" height="60"/></a>
