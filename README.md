@@ -28,9 +28,11 @@
 <a href="https://cassandra.apache.org/_/index.html" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg" alt="cassandra" width="60" height="60"/></a>
 <a href="https://mariadb.org/" target="_blank" rel="noreferrer">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg" alt="mariadb" width="60" height="60"/>
-</a>
-
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg" alt="mariadb" width="60" height="60"/></a>
+<a href="https://www.phpmyadmin.net/" target="_blank" rel="noreferrer">
+<img src="https://www.phpmyadmin.net/themes/pmahomme/img/logo_right.png" alt="phpmyadmin" width="60" height="60"/></a>
+<a href="https://redis.io/" target="_blank" rel="noreferrer">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="redis" width="60" height="60"/></a>
 
   
 <h3 align="left">Languages:</h3>
@@ -38,6 +40,9 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/> </a>
 <a href="https://www.ruby-lang.org/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="60" height="60"/></a>
+<a href="https://www.php.net/" target="_blank" rel="noreferrer">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="60" height="60"/> </a>
+
 
 
 
