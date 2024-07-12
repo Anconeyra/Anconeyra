@@ -125,16 +125,16 @@
 <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="60" height="60"/>
 </a>
 <a href="https://www.cypress.io/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/cypressio/cypressio-icon.svg" alt="cypress" width="60" height="60"/>
+  <img src="cypress.png" alt="cypress" width="60" height="60"/>
 </a>
 <a href="https://junit.org/junit5/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/junit/junit-icon.svg" alt="junit" width="60" height="60"/>
+  <img src="junit.png" alt="junit" width="60" height="60"/>
 </a>
 <a href="https://jmeter.apache.org/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/apache_jmeter/apache_jmeter-icon.svg" alt="jmeter" width="60" height="60"/>
+  <img src="jmeter.png" alt="jmeter" width="60" height="60"/>
 </a>
 <a href="https://www.selenium.dev/" target="_blank" rel="noreferrer">
-  <img src="https://www.vectorlogo.zone/logos/seleniumhq/seleniumhq-icon.svg" alt="selenium" width="60" height="60"/>
+  <img src="selenium.png" alt="selenium" width="60" height="60"/>
 </a>
  
 <h3 align="left">Other technologies:</h3>
