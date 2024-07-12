@@ -103,13 +103,10 @@
 <a href="https://bulma.io/" target="_blank" rel="noreferrer">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bulma/bulma-plain.svg" alt="bulma" width="60" height="60"/></a>
 <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-  <img src="https://sass-lang.com/favicon.ico" alt="sass" width="60" height="60"/>
-</a>
+<img src="https://sass-lang.com/favicon.ico" alt="sass" width="60" height="60"/></a>
+<a href="https://mui.com/" target="_blank" rel="noreferrer">
+<img src="https://mui.com/static/logo_black.svg" alt="material-ui" width="60" height="60"/></a>
 
-
-
-
-  
 <h3 align="left">Operating System:</h3>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="60" height="60"/> </a>
 
