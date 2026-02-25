@@ -1,0 +1,29 @@
+# robots.txt for Anconeyra Security Portfolio
+# https://anconeyra.dev/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block sensitive paths
+Disallow: /.well-known/
+Disallow: /*.gpg$
+Disallow: /*.asc$
+Disallow: /*.key$
+
+# Block common attack vectors / scanning tools
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /phpmyadmin/
+Disallow: /.env
+Disallow: /.git/
+
+# Crawl-delay for respectful scraping
+Crawl-delay: 1
+
+# Sitemap (if applicable)
+# Sitemap: https://anconeyra.dev/sitemap.xml
+
+# Notes:
+# - This site is a security researcher portfolio
+# - Automated scanning may trigger security alerts
+# - Please be respectful when crawling

@@ -1,0 +1,10 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.10.10
+Comment: Frank Anconeyra - Fullstack Cloud & Security Researcher
+Comment: GitHub: github.com/nynaroot
+Comment: Email: frank.anconeyra@tecsup.edu.pe
+
+xsBNBGR... [GENERATING KEY - COMING SOON] ...
+
+=ANC0
+-----END PGP PUBLIC KEY BLOCK-----

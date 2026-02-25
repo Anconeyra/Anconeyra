@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frank Anconeyra - Fullstack Cloud & Security Researcher Portfolio">
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="author" content="Frank Anconeyra">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; object-src 'self'; frame-src 'self' blob:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <title>ANCONEYRA | Fullstack Cloud & Security Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- DevIcons for programming language logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Boot Screen -->
+    <div id="boot-screen" class="boot-screen">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="terminal-title"><i class="fas fa-terminal"></i> root@anconeyra:~</span>
+            </div>
+            <div class="terminal-body" id="boot-content">
+                <div class="boot-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matrix Canvas (Hidden by default) -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+
+    <!-- Main Terminal Interface -->
+    <div id="main-interface" class="main-interface hidden">
+        <nav class="top-nav">
+            <div class="nav-brand">
+                <span class="prompt"><i class="fas fa-user-secret"></i> root@anconeyra:~$</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-command="./whoami" class="nav-link"><i class="fas fa-user"></i> WHOAMI</a></li>
+                <li><a href="#" data-command="./skills.sh" class="nav-link"><i class="fas fa-khanda"></i> ARSENAL</a></li>
+                <li><a href="#" data-command="./projects.log" class="nav-link"><i class="fas fa-folder-open"></i> OPERACIONES</a></li>
+                <li><a href="#" data-command="./contact.gpg" class="nav-link"><i class="fas fa-envelope-open-text"></i> CANALES</a></li>
+                <li><a href="#" data-command="matrix" class="nav-link"><i class="fas fa-code"></i> MATRIX</a></li>
+            </ul>
+        </nav>
+
+        <main class="terminal-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title"><i class="fas fa-shield-halved"></i> root@anconeyra:~/portfolio</span>
+                    <div class="terminal-controls">
+                        <span class="control close" title="Close"></span>
+                        <span class="control minimize" title="Minimize"></span>
+                        <span class="control maximize" title="Maximize"></span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <div class="welcome-message">
+                        <pre class="ascii-art">
+  _  _                      _   
+| \| |__ _ _ _  __ _ _ __ (_)__ 
+| .` / _` | ' \/ _` | '  \| / _|
+|_|\_\__,_|_||_\__,_|_|_|_|_\__|
+                                
+                                
+          <span class="glitch-text">FULLSTACK CLOUD & SECURITY</span>
+          <span class="tagline-mini">Developer | Pentester | Security Researcher</span>
+                        </pre>
+                    </div>
+                    <div class="system-status">
+                        <p><i class="fas fa-power-off"></i> INICIANDO SISTEMA... <span class="status-ok"><i class="fas fa-check"></i> OK</span></p>
+                        <p><i class="fas fa-shield-cat"></i> CARGANDO MÓDULOS DE SEGURIDAD... <span class="status-ok"><i class="fas fa-check"></i> OK</span></p>
+                        <p><i class="fas fa-file-shield"></i> VERIFICANDO INTEGRIDAD... <span class="status-ok"><i class="fas fa-check"></i> OK</span></p>
+                        <p><i class="fas fa-lock"></i> ESTABLECIENDO CONEXIÓN SEGURA... <span class="status-ok"><i class="fas fa-check"></i> OK</span></p>
+                    </div>
+                    <div class="welcome-text">
+                        <p class="highlight"><i class="fas fa-hand-sparkles"></i> Bienvenido, Usuario.</p>
+                        <p>Has accedido al nodo personal de <span class="highlight glitch-text">FRANK ANCONEYRA</span>.</p>
+                        <br>
+                        <p class="warning"><i class="fas fa-triangle-exclamation"></i> Este sistema está monitoreado. Todas las interacciones quedan registradas.</p>
+                        <br>
+                        <p>Escribe <code class="command">'help'</code> para listar comandos disponibles o navega usando el menú superior.</p>
+                        <p class="status-line"><i class="fas fa-circle" style="color: #ff6b6b; font-size: 8px;"></i> Estado: <span class="status-active">🟢 Disponible para Proyectos / Auditorías</span></p>
+                    </div>
+                    <div class="command-input-line">
+                        <span class="prompt"><i class="fas fa-chevron-right"></i></span>
+                        <input type="text" id="command-input" class="command-input" autofocus autocomplete="off" spellcheck="false" placeholder="Escribe un comando...">
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="terminal-footer">
+            <div class="footer-content">
+                <p><i class="fas fa-copyright"></i> 2024-<span id="current-year"></span> <span class="highlight">FRANK ANCONEYRA</span>. Todos los derechos reservados.</p>
+                <p><i class="fas fa-user-shield"></i> Sistema asegurado por Anconeyra | Último login: <span id="last-login"></span></p>
+                <p class="footer-tagline"><i class="fas fa-heart"></i> Stay Curious. Stay Secure. <i class="fas fa-hacker-news"></i></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Module Templates -->
+    <template id="whoami-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-user-tag"></i> IDENTIDAD CONFIRMADA</h2>
+            <div class="module-content">
+                <div class="whoami-container">
+                    <div class="profile-section">
+                        <div class="profile-image-container">
+                            <div class="profile-image-wrapper">
+                                <img src="edificacion.jpg" alt="Frank Anconeyra" class="profile-image" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 250 250%22><rect fill=%22%231a1a2e%22 width=%22250%22 height=%22250%22/><text x=%22125%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%23ff6b6b%22 font-size=%2280%22 font-weight=%22bold%22>FA</text><text x=%22125%22 y=%22220%22 text-anchor=%22middle%22 fill=%22%23ffa500%22 font-size=%2214%22>Anc0neyra</text></svg>'">
+                                <div class="profile-glow"></div>
+                            </div>
+                            <div class="profile-status">
+                                <span class="status-indicator online"></span>
+                                <span>En línea - Disponible</span>
+                            </div>
+                            <div class="profile-badges">
+                                <span class="badge"><i class="fas fa-map-marker-alt"></i> Perú 🇵🇪</span>
+                                <span class="badge"><i class="fas fa-language"></i> ES / EN (B1)</span>
+                            </div>
+                            <div class="cv-download-section">
+                                <a href="https://drive.google.com/file/d/1ymySfictqgYqEMlSGUziEUyjWUrGOwuK/view" target="_blank" class="btn btn-cv">
+                                    <i class="fas fa-eye"></i> Ver CV
+                                </a>
+                                <a href="https://drive.google.com/uc?export=download&id=1ymySfictqgYqEMlSGUziEUyjWUrGOwuK" target="_blank" class="btn btn-cv btn-download">
+                                    <i class="fas fa-download"></i> Descargar CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <pre>
+> <i class="fas fa-id-card"></i> NOMBRE: <span class="highlight">Frank Anconeyra</span>
+> <i class="fas fa-birthday-cake"></i> EDAD: <span class="highlight">22 años</span>
+> <i class="fas fa-briefcase"></i> ROL: <span class="highlight">Fullstack Cloud & Security Researcher</span>
+> <i class="fas fa-graduation-cap"></i> FORMACIÓN: <span class="highlight">TECSUP ✅ COMPLETADA</span>
+> <i class="fas fa-map-marker-alt"></i> UBICACIÓN: <span class="highlight">Perú (Remoto)</span>
+> <i class="fas fa-signal"></i> ESTADO: <span class="status-active">🟢 ACTIVO - DISPONIBLE FREELANCE</span>
+
+<span class="section-title"><i class="fas fa-scroll"></i> [RESUMEN EJECUTIVO]</span>
+Professional con background sólido en desarrollo full-stack y seguridad
+ofensiva. Mi enfoque único combina habilidades de desarrollo con seguridad,
+permitiéndome identificar vulnerabilidades desde la perspectiva del atacante
+y proponer soluciones mitigadoras efectivas.
+
+Especializado en:
+• Desarrollo Full-Stack (Frontend + Backend + Cloud)
+• Auditoría de Aplicaciones Web (OWASP Top 10)
+• Desarrollo Seguro (Secure Coding / DevSecOps)
+• Pentesting de APIs y Microservicios
+
+<span class="section-title"><i class="fas fa-medal"></i> [CERTIFICACIONES]</span>
+• <i class="fas fa-clock"></i> eJPT - eLearnSecurity Junior Penetration Tester (En estudio)
+• <i class="fas fa-clock"></i> Security+ - CompTIA Security+ (Planificado 2026)
+• <i class="fas fa-clock"></i> OWASP Security Testing (En progreso)
+• <i class="fas fa-clock"></i> AWS Cloud Practitioner (Planificado)
+
+<span class="section-title"><i class="fas fa-trophy"></i> [LOGROS DESTACADOS]</span>
+• <i class="fas fa-code"></i> +100 proyectos completados
+• <i class="fas fa-users"></i> +80 clientes satisfechos
+• <i class="fas fa-award"></i> +20 reconocimientos por calidad
+• <i class="fas fa-bug"></i> Vulnerabilidades reportadas en VDP
+
+<span class="section-title"><i class="fas fa-bullseye"></i> [OBJETIVOS 2026]</span>
+• Completar certificación eJPT
+• Participar activamente en Bug Bounty
+• Contribuir a proyectos open-source security
+• Especializarme en Application Security (AppSec)
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="skills-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-khanda"></i> CAPACIDADES TÉCNICAS</h2>
+            <div class="module-content">
+                <div class="skills-container">
+                    <!-- Programming Languages -->
+                    <div class="skill-category programming">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>LENGUAJES DE PROGRAMACIÓN</h3>
+                        </div>
+                        <div class="skills-grid-images">
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="security-uses">
+                                    <span class="use-tag exploit"><i class="fas fa-bomb"></i> Exploits</span>
+                                    <span class="use-tag automation"><i class="fas fa-robot"></i> Automatización</span>
+                                    <span class="use-tag osint"><i class="fas fa-search"></i> OSINT</span>
+                                    <span class="use-tag scripting"><i class="fas fa-file-code"></i> Scripts</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="security-uses">
+                                    <span class="use-tag xss"><i class="fas fa-bug"></i> XSS Testing</span>
+                                    <span class="use-tag security"><i class="fas fa-shield-alt"></i> Security</span>
+                                    <span class="use-tag nodejs"><i class="fab fa-node"></i> Node.js</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">TypeScript</span>
+                                <div class="security-uses">
+                                    <span class="use-tag typesafety"><i class="fas fa-check-circle"></i> Type Safety</span>
+                                    <span class="use-tag security"><i class="fas fa-shield-alt"></i> Secure Dev</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Java</span>
+                                <div class="security-uses">
+                                    <span class="use-tag spring"><i class="fas fa-leaf"></i> Spring Security</span>
+                                    <span class="use-tag audit"><i class="fas fa-search"></i> Code Audit</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">PHP</span>
+                                <div class="security-uses">
+                                    <span class="use-tag vuln"><i class="fas fa-search"></i> Vuln Analysis</span>
+                                    <span class="use-tag review"><i class="fas fa-code"></i> Code Review</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Ruby</span>
+                                <div class="security-uses">
+                                    <span class="use-tag metasploit"><i class="fas fa-dragon"></i> Metasploit</span>
+                                    <span class="use-tag scripting"><i class="fas fa-file-code"></i> Scripts</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Swift</span>
+                                <div class="security-uses">
+                                    <span class="use-tag ios"><i class="fab fa-apple"></i> iOS Security</span>
+                                    <span class="use-tag mobile"><i class="fas fa-mobile-alt"></i> Mobile</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <div class="security-uses">
+                                    <span class="use-tag xss"><i class="fas fa-bug"></i> XSS</span>
+                                    <span class="use-tag forms"><i class="fas fa-shield-alt"></i> Secure Forms</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <div class="security-uses">
+                                    <span class="use-tag injection"><i class="fas fa-bug"></i> CSS Injection</span>
+                                    <span class="use-tag csp"><i class="fas fa-lock"></i> CSP</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Go</span>
+                                <div class="security-uses">
+                                    <span class="use-tag tools"><i class="fas fa-tools"></i> Security Tools</span>
+                                    <span class="use-tag automation"><i class="fas fa-robot"></i> Automation</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category frameworks">
+                        <div class="category-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>FRAMEWORKS & LIBRERÍAS</h3>
+                        </div>
+                        <div class="frameworks-grid">
+                            <div class="framework-group">
+                                <h4><i class="fas fa-brain"></i> Backend</h4>
+                                <div class="framework-list">
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS" class="framework-icon">
+                                        <span>NestJS</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="framework-icon">
+                                        <span>Laravel</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="framework-icon">
+                                        <span>Django</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="framework-icon">
+                                        <span>Flask</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="framework-icon">
+                                        <span>Spring Boot</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="framework-icon">
+                                        <span>Express</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="framework-group">
+                                <h4><i class="fas fa-desktop"></i> Frontend</h4>
+                                <div class="framework-list">
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="framework-icon">
+                                        <span>React</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="framework-icon">
+                                        <span>Vue.js</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" alt="Nuxt.js" class="framework-icon">
+                                        <span>Nuxt.js</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="framework-icon">
+                                        <span>Angular</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="framework-icon">
+                                        <span>Tailwind</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="framework-icon">
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="framework-group">
+                                <h4><i class="fas fa-mobile-alt"></i> Mobile</h4>
+                                <div class="framework-list">
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="framework-icon">
+                                        <span>Flutter</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="framework-icon">
+                                        <span>React Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="framework-group">
+                                <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                                <div class="framework-list">
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="framework-icon">
+                                        <span>Docker</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="framework-icon">
+                                        <span>Kubernetes</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="framework-icon">
+                                        <span>AWS</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" class="framework-icon">
+                                        <span>GCP</span>
+                                    </div>
+                                    <div class="framework-item">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" class="framework-icon">
+                                        <span>GitHub Actions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category databases">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>BASES DE DATOS</h3>
+                        </div>
+                        <div class="skills-grid-images">
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">MySQL</span>
+                                <div class="security-uses">
+                                    <span class="use-tag sqli"><i class="fas fa-syringe"></i> SQL Injection</span>
+                                    <span class="use-tag audit"><i class="fas fa-search"></i> Audit</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="security-uses">
+                                    <span class="use-tag sqli"><i class="fas fa-syringe"></i> SQL Injection</span>
+                                    <span class="use-tag hardening"><i class="fas fa-shield-alt"></i> Hardening</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <div class="security-uses">
+                                    <span class="use-tag nosqli"><i class="fas fa-syringe"></i> NoSQL Injection</span>
+                                    <span class="use-tag config"><i class="fas fa-cog"></i> Security Config</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            
+                            <div class="skill-card-image">
+                                <div class="skill-image-wrapper">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="skill-lang-image">
+                                </div>
+                                <span class="skill-name">Firebase</span>
+                                <div class="security-uses">
+                                    <span class="use-tag auth"><i class="fas fa-user-lock"></i> Auth Bypass</span>
+                                    <span class="use-tag rules"><i class="fas fa-scroll"></i> Rules Security</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Tools -->
+                    <div class="skill-category security">
+                        <div class="category-header">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>HERRAMIENTAS DE SEGURIDAD</h3>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-group">
+                                <h4><i class="fas fa-search"></i> Reconocimiento</h4>
+                                <div class="tool-list">
+                                    <span class="tool-badge"><i class="fas fa-bullseye"></i> Nmap</span>
+                                    <span class="tool-badge"><i class="fas fa-globe"></i> Shodan</span>
+                                    <span class="tool-badge"><i class="fas fa-envelope"></i> theHarvester</span>
+                                    <span class="tool-badge"><i class="fas fa-spider"></i> Maltego</span>
+                                    <span class="tool-badge"><i class="fas fa-search-location"></i> Recon-ng</span>
+                                </div>
+                            </div>
+                            <div class="tool-group">
+                                <h4><i class="fas fa-bug"></i> Web Testing</h4>
+                                <div class="tool-list">
+                                    <span class="tool-badge highlight"><i class="fas fa-briefcase"></i> Burp Suite</span>
+                                    <span class="tool-badge"><i class="fas fa-shield-alt"></i> OWASP ZAP</span>
+                                    <span class="tool-badge"><i class="fas fa-syringe"></i> SQLmap</span>
+                                    <span class="tool-badge"><i class="fas fa-cookie"></i> XSStrike</span>
+                                    <span class="tool-badge"><i class="fas fa-search"></i> Gobuster</span>
+                                </div>
+                            </div>
+                            <div class="tool-group">
+                                <h4><i class="fas fa-explosion"></i> Explotación</h4>
+                                <div class="tool-list">
+                                    <span class="tool-badge"><i class="fas fa-rocket"></i> Metasploit</span>
+                                    <span class="tool-badge"><i class="fas fa-network-wired"></i> CrackMapExec</span>
+                                    <span class="tool-badge"><i class="fas fa-key"></i> Hashcat</span>
+                                    <span class="tool-badge"><i class="fas fa-lock-pick"></i> John</span>
+                                </div>
+                            </div>
+                            <div class="tool-group">
+                                <h4><i class="fas fa-microscope"></i> Análisis</h4>
+                                <div class="tool-list">
+                                    <span class="tool-badge"><i class="fas fa-network-wired"></i> Wireshark</span>
+                                    <span class="tool-badge"><i class="fas fa-code"></i> Ghidra</span>
+                                    <span class="tool-badge"><i class="fas fa-shield-virus"></i> YARA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="projects-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-folder-open"></i> REGISTRO DE OPERACIONES</h2>
+            <div class="module-content">
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-store"></i></div>
+                            <div class="project-status public"><i class="fas fa-globe"></i> PÚBLICO</div>
+                        </div>
+                        <h3>[SPRINGBOOT STORE]</h3>
+                        <p class="project-desc">Desarrollo full-stack de tienda e-commerce con Spring Boot + análisis de seguridad aplicado. Implementación de Spring Security, control de acceso, manejo seguro de sesiones.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge"><i class="fab fa-java"></i> Java</span>
+                            <span class="tech-badge"><i class="fas fa-leaf"></i> Spring Boot</span>
+                            <span class="tech-badge"><i class="fas fa-shield-alt"></i> Security</span>
+                            <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="project-status public"><i class="fas fa-globe"></i> PÚBLICO</div>
+                        </div>
+                        <h3>[GREENFIL APP]</h3>
+                        <p class="project-desc">Frontend mobile con Flutter para aplicación de sostenibilidad. Implementación de almacenamiento seguro, comunicación encriptada y autenticación robusta.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge"><i class="fab fa-flutter"></i> Flutter</span>
+                            <span class="tech-badge"><i class="fas fa-lock"></i> Secure Storage</span>
+                            <span class="tech-badge"><i class="fas fa-shield-alt"></i> HTTPS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-database"></i></div>
+                            <div class="project-status private"><i class="fas fa-lock"></i> PRIVADO</div>
+                        </div>
+                        <h3>[MOSS - SISTEMA DEPORTIVO]</h3>
+                        <p class="project-desc">Proyecto TECSUP: Sistema de gestión para evento deportivo. Diseño de BD normalizada, API Django, frontend React. Controles de acceso y prevención SQL injection.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+                            <span class="tech-badge"><i class="fab fa-python"></i> Django</span>
+                            <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                        </div>
+                        <div class="project-result">
+                            <i class="fas fa-check-circle"></i> Implementado - TECSUP
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-user-shield"></i></div>
+                            <div class="project-status private"><i class="fas fa-lock"></i> PRIVADO</div>
+                        </div>
+                        <h3>[SISTEMA EVALUACIÓN PARES]</h3>
+                        <p class="project-desc">Proyecto TECSUP: Sistema con retroalimentación en tiempo real. Seguridad en APIs, validación de inputs, protección XSS y CSRF.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                            <span class="tech-badge"><i class="fab fa-python"></i> Flask</span>
+                            <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                        </div>
+                        <div class="project-result">
+                            <i class="fas fa-check-circle"></i> Secure coding practices
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fab fa-python"></i></div>
+                            <div class="project-status wip"><i class="fas fa-cog fa-spin"></i> EN DESARROLLO</div>
+                        </div>
+                        <h3>[MOSS PROJECT - SECURITY TOOL]</h3>
+                        <p class="project-desc">Herramienta Python para automatización de seguridad. Integración con APIs de vulnerabilidades, escaneo de puertos y generación de reportes automáticos.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-robot"></i> Automation</span>
+                            <span class="tech-badge"><i class="fas fa-cloud"></i> APIs</span>
+                        </div>
+                        <div class="project-progress">
+                            <span>Progreso:</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fas fa-bug"></i></div>
+                            <div class="project-status active"><i class="fas fa-fire"></i> ACTIVO</div>
+                        </div>
+                        <h3>[BUG BOUNTY & VDP]</h3>
+                        <p class="project-desc">Participación en programas de Bug Bounty y Vulnerability Disclosure Programs. Enfoque en aplicaciones web y APIs.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">100+</span>
+                                <span class="stat-label">Proyectos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">80+</span>
+                                <span class="stat-label">Clientes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">20+</span>
+                                <span class="stat-label">Premios</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Anconeyra" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://linkedin.com/in/frank-anconeyra" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="contact-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-satellite-dish"></i> ESTABLECER COMUNICACIÓN</h2>
+            <div class="module-content">
+                <div class="warning-box">
+                    <p class="warning"><i class="fas fa-triangle-exclamation"></i> [ADVERTENCIA DE SEGURIDAD]</p>
+                    <p>No envíe información sensible a través de canales no encriptados.</p>
+                </div>
+                
+                <div class="contact-container">
+                    <h3><i class="fas fa-list-ul"></i> CANALES PRIORITARIOS</h3>
+                    <div class="contact-grid">
+                        <a href="mailto:frank.anconeyra@tecsup.edu.pe" class="contact-card email">
+                            <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email Institucional</span>
+                                <span class="contact-value">frank.anconeyra@tecsup.edu.pe</span>
+                            </div>
+                            <div class="contact-badge tecsup"><i class="fas fa-university"></i> TECSUP</div>
+                        </a>
+
+                        <a href="mailto:anconeyrafsuyo@gmail.com" class="contact-card gmail">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email Personal</span>
+                                <span class="contact-value">anconeyrafsuyo@gmail.com</span>
+                            </div>
+                            <div class="contact-badge personal">Personal</div>
+                        </a>
+
+                        <a href="tel:+51917394464" class="contact-card phone">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Teléfono (Perú)</span>
+                                <span class="contact-value">+51 917 394 464</span>
+                            </div>
+                            <div class="contact-badge whatsapp"><i class="fab fa-whatsapp"></i></div>
+                        </a>
+
+                        <a href="https://github.com/Anconeyra" target="_blank" rel="noopener" class="contact-card github">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/Anconeyra</span>
+                            </div>
+                            <div class="contact-badge external"><i class="fas fa-external-link-alt"></i></div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/frank-anconeyra" target="_blank" rel="noopener" class="contact-card linkedin">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/frank-anconeyra</span>
+                            </div>
+                            <div class="contact-badge external"><i class="fas fa-external-link-alt"></i></div>
+                        </a>
+
+                        <div class="contact-card location">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Ubicación</span>
+                                <span class="contact-value">Perú 🇵🇪 (Remoto)</span>
+                            </div>
+                            <div class="contact-badge timezone">UTC-5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="availability-section">
+                    <h3><i class="fas fa-calendar-check"></i> DISPONIBILIDAD</h3>
+                    <div class="availability-grid">
+                        <div class="availability-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <strong>Freelance</strong>
+                                <span>Disponible para proyectos</span>
+                            </div>
+                        </div>
+                        <div class="availability-item">
+                            <i class="fas fa-search"></i>
+                            <div>
+                                <strong>Auditorías</strong>
+                                <span>Agendar con 2 semanas</span>
+                            </div>
+                        </div>
+                        <div class="availability-item">
+                            <i class="fas fa-bug"></i>
+                            <div>
+                                <strong>Bug Bounty</strong>
+                                <span>Activo en VDP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="help-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-question-circle"></i> COMANDOS DISPONIBLES</h2>
+            <div class="module-content">
+                <div class="help-section">
+                    <h3 class="help-section-title"><i class="fas fa-folder-open"></i> MÓDULOS PRINCIPALES</h3>
+                    <table class="help-table">
+                        <tbody>
+                            <tr><td><code>./whoami</code></td><td>Información personal + CV</td><td><code>whoami, about</code></td></tr>
+                            <tr><td><code>./skills.sh</code></td><td>Habilidades técnicas</td><td><code>skills</code></td></tr>
+                            <tr><td><code>./projects.log</code></td><td>Proyectos</td><td><code>projects</code></td></tr>
+                            <tr><td><code>./contact.gpg</code></td><td>Contacto</td><td><code>contact</code></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="help-section">
+                    <h3 class="help-section-title"><i class="fas fa-bolt"></i> NUEVOS COMANDOS</h3>
+                    <table class="help-table">
+                        <tbody>
+                            <tr><td><code>banner</code></td><td>Mostrar banner ASCII</td><td>-</td></tr>
+                            <tr><td><code>status</code></td><td>Estado del sistema</td><td>-</td></tr>
+                            <tr><td><code>social</code></td><td>Redes sociales</td><td>-</td></tr>
+                            <tr><td><code>github</code></td><td>Perfil GitHub</td><td>-</td></tr>
+                            <tr><td><code>linkedin</code></td><td>Perfil LinkedIn</td><td>-</td></tr>
+                            <tr><td><code>email</code></td><td>Correos de contacto</td><td>-</td></tr>
+                            <tr><td><code>qr</code></td><td>Código QR contacto</td><td>-</td></tr>
+                            <tr><td><code>version</code></td><td>Versión del portfolio</td><td>-</td></tr>
+                            <tr><td><code>info</code></td><td>Info del sistema</td><td>-</td></tr>
+                            <tr><td><code>hack</code></td><td>Modo hacker</td><td>-</td></tr>
+                            <tr><td><code>cowsay</code></td><td>Mensaje aleatorio</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="help-section">
+                    <h3 class="help-section-title"><i class="fas fa-terminal"></i> COMANDOS BÁSICOS</h3>
+                    <table class="help-table">
+                        <tbody>
+                            <tr><td><code>clear</code></td><td>Limpiar terminal</td><td><code>cls</code></td></tr>
+                            <tr><td><code>history</code></td><td>Historial comandos</td><td><code>h</code></td></tr>
+                            <tr><td><code>date</code></td><td>Fecha y hora</td><td><code>time</code></td></tr>
+                            <tr><td><code>neofetch</code></td><td>Info del sistema</td><td>-</td></tr>
+                            <tr><td><code>echo [msg]</code></td><td>Imprimir mensaje</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="help-section">
+                    <h3 class="help-section-title"><i class="fas fa-gamepad"></i> EFECTOS VISUALES</h3>
+                    <table class="help-table">
+                        <tbody>
+                            <tr><td><code>matrix</code></td><td>Matrix clásico (pink/orange)</td><td>-</td></tr>
+                            <tr><td><code>matrix2</code></td><td>Matrix lluvia (verde)</td><td>-</td></tr>
+                            <tr><td><code>matrix3</code></td><td>Matrix símbolos (emoji)</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="help-section">
+                    <h3 class="help-section-title"><i class="fas fa-bug"></i> EASTER EGGS</h3>
+                    <table class="help-table">
+                        <tbody>
+                            <tr><td><code>cat flag.txt</code></td><td>CTF Flag secreta</td><td>-</td></tr>
+                            <tr><td><code>sudo</code></td><td>Mensaje divertido</td><td>-</td></tr>
+                            <tr><td><code>rm -rf /</code></td><td>Respuesta hacker</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="social-template">
+        <div class="module-output">
+            <h2 class="module-title"><i class="fas fa-share-alt"></i> REDES SOCIALES</h2>
+            <div class="module-content">
+                <div class="social-grid">
+                    <a href="https://github.com/nynaroot" target="_blank" class="social-card github">
+                        <div class="social-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>@nynaroot</p>
+                        <span class="social-link">github.com/nynaroot</span>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/frank-anconeyra" target="_blank" class="social-card linkedin">
+                        <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>Frank Anconeyra</p>
+                        <span class="social-link">linkedin.com/in/frank-anconeyra</span>
+                    </a>
+                    
+                    <a href="mailto:anconeyrafsuyo@gmail.com" class="social-card email">
+                        <div class="social-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>anconeyrafsuyo@gmail.com</p>
+                        <span class="social-link">Enviar correo →</span>
+                    </a>
+                    
+                    <a href="tel:+51917394464" class="social-card phone">
+                        <div class="social-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Teléfono</h3>
+                        <p>+51 917 394 464</p>
+                        <span class="social-link">Llamar ahora →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="404-template">
+        <div class="module-output">
+            <div class="error-container">
+                <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <p class="error">> ERROR 404: Comando no encontrado</p>
+                <p>Escribe <code class="command">'help'</code> para listar comandos.</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="neofetch-template">
+        <div class="module-output">
+            <div class="neofetch-container">
+                <pre class="neofetch-ascii">
+       <span class="color-orange">.oydNNNdyo.</span>       
+     <span class="color-orange">.ymMMMMMMMMMMy.</span>     
+    <span class="color-orange">.mMMMMMMMMMMMMMMm.</span>    
+    <span class="color-orange">dMMMMMMMMMMMMMMMMd</span>    
+    <span class="color-orange">mMMMMMMMMMMMMMMMMm</span>    
+    <span class="color-orange">mMMMMMMMMMMMMMMMMm</span>    
+    <span class="color-orange">mMMMMMMMMMMMMMMMMm</span>    
+    <span class="color-orange">mMMMMMMMMMMMMMMMMm</span>    
+    <span class="color-orange">mMMMMMMMMMMMMMMMMm</span>    
+    <span class="color-orange">dMMMMMMMMMMMMMMMMd</span>    
+    <span class="color-orange">.mMMMMMMMMMMMMMMm.</span>     
+     <span class="color-orange">.ymMMMMMMMMMMy.</span>      
+       <span class="color-orange">.oydNNNdyo.</span>        
+                </pre>
+                <div class="neofetch-info">
+                    <table>
+                        <tr><td class="neofetch-label">frank@anconeyra</td><td></td></tr>
+                        <tr><td class="neofetch-label">─────────────────</td><td></td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-desktop"></i> OS:</td><td>Kali GNU/Linux Rolling</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-microchip"></i> Kernel:</td><td>5.15.0-generic</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-box"></i> Uptime:</td><td id="uptime">0 days, 0:00</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-graduation-cap"></i> Education:</td><td>TECSUP ✅</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-language"></i> Languages:</td><td>ES (Native), EN (B1)</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-terminal"></i> Shell:</td><td>zsh 5.9</td></tr>
+                        <tr><td class="neofetch-label"><i class="fas fa-palette"></i> Theme:</td><td>Pink/Orange</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

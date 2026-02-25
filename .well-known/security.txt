@@ -1,0 +1,11 @@
+Contact: mailto:security@anconeyra.dev
+Contact: mailto:tu-email@protonmail.com
+Expires: 2024-12-31T23:59:59.000Z
+Encryption: https://anconeyra.dev/.well-known/pgp-key.txt
+Preferred-Languages: es, en
+Canonical: https://anconeyra.dev/.well-known/security.txt
+Policy: https://anconeyra.dev/security-policy.html
+
+# Security Researcher Portfolio
+# If you found a vulnerability in this website, please report it responsibly.
+# I appreciate responsible disclosure and will acknowledge your contribution.
