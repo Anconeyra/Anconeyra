@@ -44,7 +44,6 @@
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anconeyra&theme=radical&hide_border=true&background=0d1117&stroke=764ba2&ring=667eea&fire=f093fb&currStreakLabel=764ba2&sideLabel=667eea&sideNums=c0caf5&currStreakNum=764ba2" height="160" alt="Streak" />
-  <img src="https://github-readme-stats.vercel.app/api?username=Anconeyra&show_icons=true&count_private=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=667eea&icon_color=764ba2&text_color=c0caf5" height="160" alt="Stats" />
 </p>
 
 <p align="center">
