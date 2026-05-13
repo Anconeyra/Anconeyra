@@ -31,6 +31,11 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anconeyra&theme=radical&hide_border=true&background=1a1b26&stroke=764ba2&ring=667eea&fire=667eea&currStreakLabel=764ba2&sideLabel=667eea&sideNums=c0caf5&currStreakNum=764ba2" height="190" alt="Streak Stats" />
 </p>
 
+<!-- 🏆 GitHub Trophies -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Anconeyra&theme=radical&no-frame=true&no-bg=true&row=2&column=4&margin-w=15&margin-h=15" width="100%" alt="Trophies" />
+</p>
+
 <!-- ✨ Animated Badges Row 2 -->
 <p align="center">
   
@@ -368,7 +373,22 @@
   <img src="https://ghchart.rshah.org/667eea/Anconeyra" alt="Contribution Graph" width="100%" />
 </p>
 
+<!-- 📊 Animated Stats Cards -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Anconeyra&show_icons=true&count_private=true&theme=radical&hide_border=true&bg_color=1a1b26&title_color=667eea&icon_color=764ba2&text_color=c0caf5" height="170" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anconeyra&layout=compact&theme=radical&hide_border=true&bg_color=1a1b26&title_color=667eea&text_color=c0caf5" height="170" alt="Top Languages" />
+</p>
 
+<!-- 🎮 Animated Coding Banner -->
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding" width="600" />
+</p>
+
+<!-- 🌐 Animated Metrics -->
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anconeyra&theme=radical&utcOffset=-5" height="180" alt="Productive Time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Anconeyra&theme=radical" height="180" alt="Repos per Language" />
+</p>
 
 <!-- Certificate Image -->
 <p align="center">
