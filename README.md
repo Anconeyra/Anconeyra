@@ -183,9 +183,9 @@
 <hr width="100%">
 
 <!-- CYBERSECURITY -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=0:ff6b6b,50:4ecdc4,100:667eea&height=80&section=header&text=%F0%9F%94%90+Cybersecurity+%26+Pentesting&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Security" />
-</p>
+<h3 align="center">
+  🔐 Cybersecurity & Pentesting
+</h3>
 
 | Tool | Focus Area |
 |------|-----------|
@@ -201,9 +201,9 @@
 <hr width="100%">
 
 <!-- CERTIFICATIONS -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=0:667eea,50:764ba2,100:f093fb&height=80&section=header&text=%F0%9F%93%9C+Certifications+%26+Badges&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Certifications" />
-</p>
+<h3 align="center">
+  📜 Certifications & Badges
+</h3>
 
 <p align="center">
   <a href="https://www.credly.com/users/frank-anconeyra"><img src="https://img.shields.io/badge/View_Credly_Profile-ff6b6b?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly" /></a>
