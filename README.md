@@ -45,7 +45,6 @@
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anconeyra&theme=radical&hide_border=true&background=0d1117&stroke=764ba2&ring=667eea&fire=f093fb&currStreakLabel=764ba2&sideLabel=667eea&sideNums=c0caf5&currStreakNum=764ba2" height="160" alt="Streak" />
   <img src="https://github-readme-stats.vercel.app/api?username=Anconeyra&show_icons=true&count_private=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=667eea&icon_color=764ba2&text_color=c0caf5" height="160" alt="Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anconeyra&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=667eea&text_color=c0caf5" height="160" alt="Langs" />
 </p>
 
 <p align="center">
@@ -56,9 +55,6 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anconeyra&theme=react-dark&color=667eea&line=764ba2&point=f093fb&hide_border=true&bg_color=0d1117&area=true&area_color=667eea20" alt="Graph" />
 </p>
 
-<p align="center">
-  <img src="https://ghchart.rshah.org/667eea/Anconeyra" alt="Contribution Chart" width="100%" />
-</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:667eea,50:764ba2,100:f093fb&height=6&width=100%&section=header" alt="Ribbon" />
@@ -192,18 +188,16 @@
   <img src="https://capsule-render.vercel.app/api?type=shark&color=0:ff6b6b,50:4ecdc4,100:667eea&height=80&section=header&text=%F0%9F%94%90+Cybersecurity+%26+Pentesting&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Security" />
 </p>
 
-<table align="center">
-  <tr>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/wireshark/1679A7" width="50"/><br/><b>Wireshark</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/owasp/000000" width="50"/><br/><b>OWASP</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/kalilinux/557C94" width="50"/><br/><b>Kali Linux</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/snyk/4C4A73" width="50"/><br/><b>Snyk</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/elastic/005571" width="50"/><br/><b>Elastic SIEM</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/hashicorp/000000" width="50"/><br/><b>Vault</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/github/181717" width="50"/><br/><b>GH Security</b></td>
-    <td align="center" width="12.5%"><img src="https://cdn.simpleicons.org/metasploit/2596CD" width="50"/><br/><b>Metasploit</b></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali" />
+  <img src="https://img.shields.io/badge/Snyk-4C4A73?style=for-the-badge&logo=snyk&logoColor=white" alt="Snyk" />
+  <img src="https://img.shields.io/badge/Elastic_SIEM-005571?style=for-the-badge&logo=elastic&logoColor=white" alt="Elastic" />
+  <img src="https://img.shields.io/badge/Vault-000000?style=for-the-badge&logo=hashicorp&logoColor=white" alt="Vault" />
+  <img src="https://img.shields.io/badge/GitHub_Security-181717?style=for-the-badge&logo=github&logoColor=white" alt="GH Security" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" />
+</p>
 
 <hr width="100%">
 
@@ -224,38 +218,13 @@
 <summary><b>📋 Full certification portfolio</b></summary>
 <br>
 
-<table align="center">
-  <tr>
-    <th>Category</th>
-    <th>Badges</th>
-    <th>Issuer</th>
-  </tr>
-  <tr>
-    <td>🔐 <b>Cybersecurity</b></td>
-    <td>Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning</td>
-    <td><img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td>☁️ <b>Cloud (AWS)</b></td>
-    <td>Getting Started with Databases, Serverless, Cloud 101</td>
-    <td><img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td>🌐 <b>Networking</b></td>
-    <td>Networking Basics, Networking Devices & Initial Configuration</td>
-    <td><img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td>🐍 <b>Python</b></td>
-    <td>Python Essentials 1 & 2</td>
-    <td><img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td>💼 <b>Enterprise</b></td>
-    <td>SAP SuccessFactors HCM Solutions</td>
-    <td><img src="https://img.shields.io/badge/SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white" /></td>
-  </tr>
-</table>
+| Category | Badges | Issuer |
+|----------|--------|--------|
+| 🔐 Cybersecurity | Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning | Cisco |
+| ☁️ Cloud (AWS) | Getting Started with Databases, Serverless, Cloud 101 | AWS |
+| 🌐 Networking | Networking Basics, Networking Devices & Initial Configuration | Cisco |
+| 🐍 Python | Python Essentials 1 & 2 | Cisco |
+| 💼 Enterprise | SAP SuccessFactors HCM Solutions | SAP |
 
 </details>
 
