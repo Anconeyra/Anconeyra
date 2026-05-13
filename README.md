@@ -187,16 +187,16 @@
   <img src="https://capsule-render.vercel.app/api?type=shark&color=0:ff6b6b,50:4ecdc4,100:667eea&height=80&section=header&text=%F0%9F%94%90+Cybersecurity+%26+Pentesting&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Security" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali" />
-  <img src="https://img.shields.io/badge/Snyk-4C4A73?style=for-the-badge&logo=snyk&logoColor=white" alt="Snyk" />
-  <img src="https://img.shields.io/badge/Elastic_SIEM-005571?style=for-the-badge&logo=elastic&logoColor=white" alt="Elastic" />
-  <img src="https://img.shields.io/badge/Vault-000000?style=for-the-badge&logo=hashicorp&logoColor=white" alt="Vault" />
-  <img src="https://img.shields.io/badge/GitHub_Security-181717?style=for-the-badge&logo=github&logoColor=white" alt="GH Security" />
-  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" />
-</p>
+| Tool | Focus Area |
+|------|-----------|
+| 🔍 **Wireshark** | Network Analysis & Packet Inspection |
+| 🌐 **OWASP** | Web Application Security Testing |
+| 💻 **Kali Linux** | Penetration Testing OS |
+| 🛡️ **Snyk** | DevSecOps & Vulnerability Scanning |
+| 📊 **Elastic Security** | SIEM & Threat Analytics |
+| 🔑 **HashiCorp Vault** | Secrets Management |
+| 🐙 **GitHub Security** | Code Security & Dependabot |
+| ⚡ **Metasploit** | Exploitation & PenTesting |
 
 <hr width="100%">
 
@@ -206,24 +206,17 @@
 </p>
 
 <p align="center">
-  <a href="https://www.credly.com/users/frank-anconeyra" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%93%9C_View_Credly_Profile-ff6b6b?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly" />
-  </a>
-  <img src="https://img.shields.io/badge/%F0%9F%8F%85_15%2B_Earned-667eea?style=for-the-badge&logo=acclaim&logoColor=white" alt="Total" />
-  <img src="https://img.shields.io/badge/%F0%9F%93%86_2025--2026-764ba2?style=for-the-badge&logo=calendar&logoColor=white" alt="Years" />
+  <a href="https://www.credly.com/users/frank-anconeyra"><img src="https://img.shields.io/badge/View_Credly_Profile-ff6b6b?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly" /></a>
 </p>
 
 <details open>
-<summary><b>📋 Full certification portfolio</b></summary>
-<br>
+<summary>📋 15+ Certifications (click to expand)</summary>
 
-| Category | Badges | Issuer |
-|----------|--------|--------|
-| 🔐 Cybersecurity | Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning | Cisco |
-| ☁️ Cloud (AWS) | Getting Started with Databases, Serverless, Cloud 101 | AWS |
-| 🌐 Networking | Networking Basics, Networking Devices & Initial Configuration | Cisco |
-| 🐍 Python | Python Essentials 1 & 2 | Cisco |
-| 💼 Enterprise | SAP SuccessFactors HCM Solutions | SAP |
+- 🔐 **Cybersecurity (5)**: Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning — _Cisco_
+- ☁️ **Cloud AWS (3)**: Getting Started with Databases, Serverless, Cloud 101 — _AWS_
+- 🌐 **Networking (2)**: Networking Basics, Networking Devices & Initial Configuration — _Cisco_
+- 🐍 **Python (2)**: Python Essentials 1 & 2 — _Cisco_
+- 💼 **Enterprise (1)**: SAP SuccessFactors HCM Solutions — _SAP_
 
 </details>
 
