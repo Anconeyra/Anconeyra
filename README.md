@@ -57,7 +57,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Anconeyra/Anconeyra/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake" />
+  <img src="https://ghchart.rshah.org/667eea/Anconeyra" alt="Contribution Chart" width="100%" />
 </p>
 
 <p align="center">
@@ -269,18 +269,15 @@
 <table align="center">
   <tr>
     <td align="center" width="33%">
-      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="130"/><br/>
-      <b>🎯 Full-Lifecycle Delivery</b><br/>
+      <img src="https://img.shields.io/badge/%F0%9F%8E%AF_Full--Lifecycle_Delivery-667eea?style=for-the-badge&logo=githubactions&logoColor=white"/><br/>
       <sub>From concept → architecture → deployment → maintenance. I own the entire pipeline.</sub>
     </td>
     <td align="center" width="33%">
-      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="130"/><br/>
-      <b>🔐 Security-First Mindset</b><br/>
+      <img src="https://img.shields.io/badge/%F0%9F%94%90_Security--First_Mindset-4ecdc4?style=for-the-badge&logo=security&logoColor=white"/><br/>
       <sub>Every system follows OWASP guidelines, zero-trust, and defense in depth.</sub>
     </td>
     <td align="center" width="33%">
-      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="130"/><br/>
-      <b>☁️ Cloud-Native Architect</b><br/>
+      <img src="https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Cloud--Native_Architect-764ba2?style=for-the-badge&logo=amazon-aws&logoColor=white"/><br/>
       <sub>Multi-cloud, containerized, auto-scaled, and cost-optimized by design.</sub>
     </td>
   </tr>
