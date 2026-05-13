@@ -189,14 +189,14 @@
 
 | Tool | Focus Area |
 |------|-----------|
-| 🔍 **Wireshark** | Network Analysis & Packet Inspection |
-| 🌐 **OWASP** | Web Application Security Testing |
-| 💻 **Kali Linux** | Penetration Testing OS |
-| 🛡️ **Snyk** | DevSecOps & Vulnerability Scanning |
-| 📊 **Elastic Security** | SIEM & Threat Analytics |
-| 🔑 **HashiCorp Vault** | Secrets Management |
-| 🐙 **GitHub Security** | Code Security & Dependabot |
-| ⚡ **Metasploit** | Exploitation & PenTesting |
+| <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" /> | Network Analysis & Packet Inspection |
+| <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" /> | Web Application Security Testing |
+| <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" /> | Penetration Testing OS |
+| <img src="https://img.shields.io/badge/Snyk-4C4A73?style=for-the-badge&logo=snyk&logoColor=white" /> | DevSecOps & Vulnerability Scanning |
+| <img src="https://img.shields.io/badge/Elastic_SIEM-005571?style=for-the-badge&logo=elastic&logoColor=white" /> | SIEM & Threat Analytics |
+| <img src="https://img.shields.io/badge/Vault-000000?style=for-the-badge&logo=hashicorp&logoColor=white" /> | Secrets Management |
+| <img src="https://img.shields.io/badge/GitHub_Security-181717?style=for-the-badge&logo=github&logoColor=white" /> | Code Security & Dependabot |
+| <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" /> | Exploitation & PenTesting |
 
 <hr width="100%">
 
@@ -210,13 +210,16 @@
 </p>
 
 <details open>
-<summary>📋 15+ Certifications (click to expand)</summary>
+<summary><b>📋 15+ Certifications (click to expand)</b></summary>
+<br>
 
-- 🔐 **Cybersecurity (5)**: Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning — _Cisco_
-- ☁️ **Cloud AWS (3)**: Getting Started with Databases, Serverless, Cloud 101 — _AWS_
-- 🌐 **Networking (2)**: Networking Basics, Networking Devices & Initial Configuration — _Cisco_
-- 🐍 **Python (2)**: Python Essentials 1 & 2 — _Cisco_
-- 💼 **Enterprise (1)**: SAP SuccessFactors HCM Solutions — _SAP_
+| Category | Details |
+|----------|---------|
+| 🔐 Cybersecurity | Junior Cybersecurity Analyst, Endpoint Security, Network Defense, Intro to Cybersecurity, Lifelong Learning <br/> <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /> |
+| ☁️ Cloud AWS | Getting Started with Databases, Serverless, Cloud 101 <br/> <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white" /> |
+| 🌐 Networking | Networking Basics, Networking Devices & Initial Configuration <br/> <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /> |
+| 🐍 Python | Python Essentials 1 & 2 <br/> <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" /> |
+| 💼 Enterprise | SAP SuccessFactors HCM Solutions <br/> <img src="https://img.shields.io/badge/SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white" /> |
 
 </details>
 
