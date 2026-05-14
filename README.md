@@ -51,6 +51,10 @@
 </p>
 
 <p align="center">
+  <sub>Codeando..</sub>
+</p>
+
+<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anconeyra&theme=react-dark&color=667eea&line=764ba2&point=f093fb&hide_border=true&bg_color=0d1117&area=true&area_color=667eea20" alt="Graph" />
 </p>
 
@@ -184,7 +188,7 @@
 
 <!-- CYBERSECURITY -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=0:ff6b6b,50:4ecdc4,100:667eea&height=80&section=header&text=%F0%9F%94%90+Cybersecurity+%26+Pentesting&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Security" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=500&color=ff6b6b&center=true&vCenter=true&width=500&height=60&lines=%F0%9F%94%90+Cybersecurity+%26+Pentesting" alt="Security" />
 </p>
 
 | Tool | Focus Area |
@@ -202,7 +206,7 @@
 
 <!-- CERTIFICATIONS -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=0:667eea,50:764ba2,100:f093fb&height=80&section=header&text=%F0%9F%93%9C+Certifications+%26+Badges&fontSize=28&fontAlignY=50&animation=twinkling&fontColor=ffffff" alt="Certifications" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=500&color=a855f7&center=true&vCenter=true&width=500&height=60&lines=%F0%9F%93%9C+Certifications+%26+Badges" alt="Certifications" />
 </p>
 
 <p align="center">
