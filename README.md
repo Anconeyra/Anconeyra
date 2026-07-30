@@ -1,6 +1,6 @@
 <div align="center">
 
-# Frank Anconeyra
+# Hi, I'm Frank Anconeyra
 
 **`Full-Stack Developer · Cybersecurity · Cloud Architect`**
 
@@ -8,15 +8,25 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=about.me&logoColor=white)](https://anconeyra.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/frank-anconeyra)
-[![Credly](https://img.shields.io/badge/Credly-FF6B6B?style=for-the-badge&logo=google-cloud&logoColor=white)](https://www.credly.com/users/frank-anconeyra)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anconeyrafsuyo@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/51917394464)
+<a href="https://anconeyra.github.io/">
+  <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfolio"/>
+</a>
+<a href="https://linkedin.com/in/frank-anconeyra">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://www.credly.com/users/frank-anconeyra">
+  <img src="https://img.shields.io/badge/Credly-FF6B6B?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly"/>
+</a>
+<a href="mailto:anconeyrafsuyo@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://wa.me/51917394464">
+  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+</a>
 
-<br/>
+<br/><br/>
 
-> *"I build systems that survive. Secure, scalable, cloud-native — from API to infrastructure."*
+> *"I build systems that survive."*
 
 </div>
 
@@ -44,12 +54,6 @@
 
 <br/>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Anconeyra/Anconeyra/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-</p>
-
-<br/>
-
 ---
 
 <br/>
@@ -62,12 +66,12 @@
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| **Greenfil** | `Flutter` `C#/.NET` | App industrial + backend para gestión de procesos. Full ownership del frontend mobile a la API. [Frontend](https://github.com/Anconeyra/Flutter-grenfil) · [Backend](https://github.com/Anconeyra/C-backend-greenfi) |
-| **LiteConta-SUNAT** | `PHP` `Blade` | Sistema contable con integración SUNAT. UX diseñada para minimizar la carga cognitiva del empresario peruano. [→](https://github.com/Anconeyra/LiteConta-SUNAT) |
-| **MOSS** | `Python` `ML` | Pipeline de análisis y procesamiento de datos con técnicas de machine learning. [→](https://github.com/Anconeyra/MOSS) |
-| **CRM Django** | `Python` `Django` | Customer Relationship Management con autenticación completa y CRUD. [→](https://github.com/Anconeyra/Crm-Django) |
-| **Mynerz** | `Svelte` | Aplicación web moderna construida con Svelte. [→](https://github.com/Anconeyra/Mynerz) |
-| **Gestión de Inventarios** | `HTML` `CSS` `JS` | Sistema de control y gestión de inventarios con interfaz web. [→](https://github.com/Anconeyra/Gesti-n-de-Inventarios) |
+| **Greenfil** | `Flutter` `C#/.NET` | Industrial process management: Flutter mobile app + C#/.NET API. Full-stack ownership. [Frontend](https://github.com/Anconeyra/Flutter-grenfil) · [Backend](https://github.com/Anconeyra/C-backend-greenfi) |
+| **LiteConta-SUNAT** | `PHP` `Blade` | Accounting system with Peruvian SUNAT tax integration. UX designed to minimize cognitive load. [→](https://github.com/Anconeyra/LiteConta-SUNAT) |
+| **MOSS** | `Python` `ML` | Data analysis and processing pipeline using machine learning techniques. [→](https://github.com/Anconeyra/MOSS) |
+| **CRM Django** | `Python` `Django` | Customer relationship management with full CRUD and authentication. [→](https://github.com/Anconeyra/Crm-Django) |
+| **Mynerz** | `Svelte` | Modern web application built with Svelte. [→](https://github.com/Anconeyra/Mynerz) |
+| **Inventory System** | `HTML` `CSS` `JS` | Inventory control and management with modern web interface. [→](https://github.com/Anconeyra/Gesti-n-de-Inventarios) |
 
 </div>
 
@@ -89,14 +93,14 @@
 
 <div align="center">
 
-| Area | Technologies |
-|------|-------------|
+| Area | Stack |
+|------|-------|
 | **Frontend** | React, Vue, Svelte, TypeScript, JavaScript, HTML/CSS |
 | **Backend** | Java/Spring, Node.js, Python, Go, C#/.NET, PHP |
 | **Mobile** | Flutter, Kotlin, Dart, Android |
-| **Cloud & DevOps** | AWS, Azure, GCP, Docker, Kubernetes, Terraform, Jenkins, Postman |
+| **Cloud & DevOps** | AWS, Azure, GCP, Docker, Kubernetes, Terraform, Jenkins |
 | **Security** | OWASP, Wireshark, Kali Linux, Metasploit, Snyk, Vault, Elastic SIEM |
-| **Databases** | PostgreSQL, MySQL, MongoDB, Redis, Cassandra, MariaDB, Firebase, SQL Server |
+| **Databases** | PostgreSQL, MySQL, MongoDB, Redis, Cassandra, MariaDB, Firebase |
 | **Embedded & IoT** | Arduino, OpenCV, Linux |
 
 </div>
