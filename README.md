@@ -21,12 +21,19 @@
 ## 📊 Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anconeyra&theme=radical&hide_border=true&background=0d1117&stroke=764ba2&ring=667eea&fire=f093fb&currStreakLabel=764ba2&sideLabel=667eea&sideNums=c0caf5&currStreakNum=764ba2" alt="GitHub Streak" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anconeyra&theme=radical" alt="Contributions by month" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anconeyra&theme=react-dark&color=667eea&line=764ba2&point=f093fb&hide_border=true&bg_color=0d1117&area=true&area_color=667eea20" alt="Activity Graph" />
-</p>
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Anconeyra&theme=radical" alt="Stats" />
+    </td>
+    <td>
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anconeyra&theme=radical" alt="Top Languages" />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Anconeyra/Anconeyra/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
