@@ -1,36 +1,36 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,50:764ba2,100:f093fb&height=120&section=header&animation=twinkling" alt="Header wave" />
-</p>
-
 <div align="center">
 
-# Hi, I'm Frank Anconeyra
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,50:764ba2,100:f093fb&height=90&section=header&animation=twinkling" alt="Header wave" />
 
-**`Full-Stack Developer · Cybersecurity · Cloud Architect`**
+  <br/>
 
-🏡 Arequipa, Perú · ✉️ anconeyrafsuyo@gmail.com · 💼 Open to work
+  # Hi, I'm Frank Anconeyra
 
-<br/>
+  **`Full-Stack Developer · Cybersecurity · Cloud Architect`**
 
-<a href="https://anconeyra.github.io/">
-  <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfolio"/>
-</a>
-<a href="https://linkedin.com/in/frank-anconeyra">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="https://www.credly.com/users/frank-anconeyra">
-  <img src="https://img.shields.io/badge/Credly-FF6B6B?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly"/>
-</a>
-<a href="mailto:anconeyrafsuyo@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-<a href="https://wa.me/51917394464">
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
-</a>
+  🏡 Arequipa, Perú · ✉️ anconeyrafsuyo@gmail.com · 💼 Open to work
 
-<br/>
+  <br/>
 
-> *"I build systems that survive."*
+  <a href="https://anconeyra.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=about.me&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://linkedin.com/in/frank-anconeyra">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://www.credly.com/users/frank-anconeyra">
+    <img src="https://img.shields.io/badge/Credly-FF6B6B?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Credly"/>
+  </a>
+  <a href="mailto:anconeyrafsuyo@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://wa.me/51917394464">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
+  </a>
+
+  <br/>
+
+  > *"I build systems that survive."*
 
 </div>
 
