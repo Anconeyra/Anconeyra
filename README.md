@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,50:764ba2,100:f093fb&height=180&section=header&animation=twinkling" alt="Header wave" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,50:764ba2,100:f093fb&height=120&section=header&animation=twinkling" alt="Header wave" />
 </p>
 
 <div align="center">
@@ -28,13 +28,11 @@
   <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
 </a>
 
-<br/><br/>
+<br/>
 
 > *"I build systems that survive."*
 
 </div>
-
-<br/>
 
 ---
 
